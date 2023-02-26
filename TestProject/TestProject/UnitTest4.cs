@@ -20,7 +20,6 @@ namespace TestProject
                 persons.Should().OnlyHaveUniqueItems();
                 persons.Should().ContainEquivalentOf(new Person() {Age = 12, Name = "alex"});
             }
-
         }
     }
 }
