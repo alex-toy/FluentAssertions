@@ -1,10 +1,10 @@
-﻿namespace BusinessProject
+﻿namespace BusinessLayer
 {
     public class Testable
     {
-        public void MethotThatThrowsExeption()
+        public void MethotThatThrowsExeption(int threshold)
         {
-            throw new NotImplementedException();
+            if (threshold > 5) throw new ArgumentNullException("error_message");
         }
 
         public void MethotThatDoesntThrowsExeption()
